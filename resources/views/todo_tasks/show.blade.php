@@ -9,16 +9,15 @@
         <div class="col-lg-12">
           <div class="p-5">
             <div class="form-group">
-              <label for="title">Title:</label>
-              <p>{{ $todoTask->title }}</p>
+              <label for="title" style="margin-right: 10px;"><b>Title: </b></label><span>{{ $todoTask->title }}</span>
             </div>
             <div class="form-group">
-              <label for="description">Description:</label>
-              <p>{{ $todoTask->description }}</p>
+              <label for="description" style="margin-right: 10px;"><b>Description: </b></label>
+              <span>{{ $todoTask->description }}</span>
             </div>
             <div class="form-group">
-              <label for="status">Status:</label>
-              <p>
+              <label for="status" style="margin-right: 10px;"><b>Status: </b></label>
+              <span>
                 @if($todoTask->status == 1)
                 <span class="badge badge-primary">Active</span>
                 @elseif($todoTask->status == 0)
@@ -26,7 +25,7 @@
                 @else
                 <span class="badge badge-secondary">Completed</span>
                 @endif
-              </p>
+              </span>
             </div>
             <a href="{{ route('todo-tasks.index') }}" class="btn btn-secondary">Back to List</a>
             <a href="{{ route('todo-tasks.edit', $todoTask->id) }}" class="btn btn-warning">Edit</a>

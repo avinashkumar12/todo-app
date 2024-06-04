@@ -21,17 +21,17 @@
               @csrf
               @method('PUT')
               <div class="form-group row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="col-sm-12 mb-3 mb-sm-0">
                   <label for="title">Title:</label>
                   <input type="text" class="form-control" name="title" value="{{ old('title', $todoTask->title) }}" required>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <label for="description">Description:</label>
                   <textarea class="form-control" name="description">{{ old('description', $todoTask->description) }}</textarea>
                 </div>
 
-                <div class="col-sm-6">
-                  <label for="status">Description:</label>
+                <div class="col-sm-12">
+                  <label for="status">Status:</label>
                   <select class="custom-select custom-select-lg mb-3" name="status">
                     <option selected disabled>select task status</option>
                     <option value="0" {{$todoTask->status == 0 ?'selected':''}}>InActive</option>
