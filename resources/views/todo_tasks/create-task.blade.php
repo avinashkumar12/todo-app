@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="col-sm-12">
-                  <label for=" status">Description:</label>
+                  <label for=" status">Status:</label>
                   <select class="custom-select custom-select-lg mb-3" name="status">
                     <option selected disabled>select task status</option>
                     <option value="0">InActive</option>
@@ -40,8 +40,8 @@
                 </div>
               </div>
               <button type="submit" class="btn btn-primary">Create</button>
+              <hr>
             </form>
-            <hr>
 
           </div>
         </div>
